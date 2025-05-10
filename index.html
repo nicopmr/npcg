@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page protégée</title>
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      if (password === "monmotdepasse") {
+        window.location.href = "secret.html";
+      } else {
+        alert("Mot de passe incorrect !");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Entrez le mot de passe</h2>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Valider</button>
+</body>
+</html>
